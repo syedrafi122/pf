@@ -1,0 +1,60 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: black;
+  color:white;
+  font-size: 30px;
+  font-family:courier,arial,helvetica;
+}
+
+.header img{
+	 width:15%;
+  border-radius: 50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  background-color:black;
+}
+
+li {
+	list-style: none;
+  float: left;
+	background-color: blue;
+	padding: 2px 2px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.content h1{
+	text-align: center;
+	display: block;
+}
+
+.content {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: aqua;
+	border: 2px solid black;
+	z-index: 1;
+	
+}
