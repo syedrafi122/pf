@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+ <style>
+ body{
+     font-family: monospace;
+     background: red;
+     color: white;
+
+        }
+     header{
+         margin-left: 15%;
+         margin-top:15%;
+         width: 70%;
+         height:60%;
+         background: pink;
+         text-align: center;
+     }
+     .input{
+         width: 40%;
+         text-align: center;
+     }
+     .submit{
+         margin:20px;
+         width:40%;
+     }
+     h1{
+         background: black;
+         color: white;
+     }
+     .percentage{
+         text-align: center;
+     }
+     .footer{
+         background: black;
+         color: white;
+     }
+     .submit:hover{
+         background:black;
+         color: white;
+}
+</style>
+</head>
+<body>
+   
+   
+<header >
+ 
+     <h1>LOVE CALCULATOR</h1>
+     <input type="text" name="" class="input" placeholder="Your Name" id="name" >
+     <spam>+</spam>
+     <input type="text" name="" class="input" placeholder="Lover Name" id="lname" ><br>
+    <button  class="submit" onclick="checkloveper()">Submit</button>
+    <br>
+    <div>
+     <input type="text" name="" placeholder="PERCENTAGE" class="percentage" id="lovevalue">
+    </div>
+  </div> 
+    <div class="footer "><p>&copy; Syed Sabbir Ahmed Rafi</p></div>
+</div>
+
+</header>
+
+   
+<script>
+ function checkloveper(){
+
+  var name = document.getElementById('name').value;
+  var lname = document.getElementById('lname').value;
+
+  if(name == ""){
+   alert('Please enter your name');
+  }else if (name.length <=2 ) {
+   alert('Min lenght is 3')
+  }else if(!isNaN(name)){
+   alert('Numbers are not allowed');
+  }
+
+  else if(lname == ""){
+   alert('Please enter your love name');
+  }else if (lname.length <=2 ) {
+   alert('Min lenght is 3')
+  }else if(!isNaN(lname)){
+   alert('Numbers are not allowed');
+  }
+  else{
+  var lovdata = Math.random() * 100;
+  lovdata = Math.floor(lovdata);
+  document.getElementById('lovevalue').value = lovdata + "%"; 
+  }
+  
+ }
+</script>
+</body>
+</html>
